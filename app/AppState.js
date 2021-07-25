@@ -1,10 +1,13 @@
-import Value from "./Models/Value.js"
+//import Value from "./Models/Value.js"
+import Trivia from "./Models/Trivia.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
+
 class AppState extends EventEmitter {
   /** @type {Value[]} */
-  values = []
+  //values = []
+  trivias = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {
