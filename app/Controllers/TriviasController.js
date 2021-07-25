@@ -9,6 +9,7 @@ function _draw() {
 export default class TriviasController {
   constructor() {
     ProxyState.on('trivias', _draw)
+    this.getNewQuestion()
   }
   async getNewQuestion() {
     try {

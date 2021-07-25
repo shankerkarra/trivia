@@ -1,5 +1,6 @@
 //import ValuesController from "./Controllers/ValuesController.js";
-import triviasController from "./Controllers/TriviasController.js"
+
+import TriviasController from "./Controllers/TriviasController.js";
 
 class App {
   //valuesController = new ValuesController();

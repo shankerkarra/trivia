@@ -4,11 +4,13 @@ import { triviaApi } from "./AxiosService.js";
 
 class TriviasService {
   async getNewQuestion() {
-    const res = await triviaApi.get()
-    this.getNewQuestion()
+    try {
+      const res = await triviaApi.get()
+    } catch (error) {
+      console.log(error);
+    }
+    ProxyState.trivias = new Trivia(res.data[0])
   }
-
-  // ProxyState.trivias = new Trivia(res.data[0])
 }
 
 
